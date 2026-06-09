@@ -431,13 +431,12 @@
         },
         {
           "year": 2023,
-          "revenue": 1818.7,
+          "revenue": 669.8,
           "netIncome": 34.6,
           "ebitda": 118.8,
           "investment": 89.1,
           "budget": 297.0,
           "budgetExecuted": 273.2,
-          "is_real_adjusted": true,
           "real_fields": [
             "revenue"
           ]
