@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111c33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- franja Perú superior -->
+  <rect x="0" y="0" width="1200" height="8" fill="#d91023"/>
+  <rect x="0" y="622" width="1200" height="8" fill="#d91023"/>
+
+  <!-- Escudo -->
+  <g transform="translate(96,150)">
+    <path d="M70 0 L150 30 V128 C150 196 110 232 70 252 C30 232 -10 196 -10 128 V30 Z"
+          fill="none" stroke="#3b82f6" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="28" y="70" width="84" height="22" rx="4" fill="#d91023"/>
+    <rect x="28" y="100" width="84" height="22" rx="4" fill="#f8fafc"/>
+    <rect x="28" y="130" width="84" height="22" rx="4" fill="#d91023"/>
+  </g>
+
+  <!-- Texto -->
+  <text x="320" y="150" fill="#7dd3fc" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3">OBSERVATORIO · PERÚ 🇵🇪</text>
+  <text x="320" y="232" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800">Sector Defensa</text>
+  <text x="320" y="304" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800">e Interior</text>
+  <text x="320" y="356" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="500">Tablero de inteligencia financiera · FONAFE · MEF · OCDS</text>
+
+  <!-- Chips empresas -->
+  <g font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">
+    <rect x="320" y="392" width="118" height="50" rx="25" fill="#1e293b" stroke="#2563eb" stroke-width="2"/>
+    <text x="379" y="425" fill="#e2e8f0" text-anchor="middle">SIMA</text>
+    <rect x="452" y="392" width="128" height="50" rx="25" fill="#1e293b" stroke="#dc2626" stroke-width="2"/>
+    <text x="516" y="425" fill="#e2e8f0" text-anchor="middle">FAME</text>
+    <rect x="594" y="392" width="150" height="50" rx="25" fill="#1e293b" stroke="#0891b2" stroke-width="2"/>
+    <text x="669" y="425" fill="#e2e8f0" text-anchor="middle">SEMAN</text>
+  </g>
+
+  <!-- Nota de datos + autoría -->
+  <text x="320" y="510" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="500">Datos verificados con fuente · series de demostración marcadas como ilustrativas</text>
+  <text x="320" y="548" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="600">Desarrollado por Carlos Cárdenas Fernández</text>
+</svg>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observatorio del Sector Defensa e Interior del Perú | Tablero financiero</title>
+    <meta name="description" content="Tablero de inteligencia financiera del sector Defensa e Interior del Perú: empresas SIMA, FAME y SEMAN, presupuesto, contrataciones (OCDS), transparencia y diagnóstico. Datos abiertos; cifras ilustrativas hasta cargar fuentes oficiales." />
+    <meta name="keywords" content="FONAFE, empresas públicas Perú, empresas estatales, transparencia, datos abiertos, contrataciones, SEACE, OECE, gestión pública, Petroperú, Sedapal, Electroperú, Banco de la Nación, dashboard, observatorio" />
+    <meta name="author" content="Carlos Mauro Cárdenas" />
+    <link rel="canonical" href="https://unimauro.github.io/observatorio-defensa-interior/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./favicon-64.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Observatorio del Sector Defensa e Interior del Perú" />
+    <meta property="og:title" content="Observatorio del Sector Defensa e Interior del Perú" />
+    <meta property="og:description" content="Inteligencia financiera del sector Defensa e Interior del Perú. Datos abiertos." />
+    <meta property="og:url" content="https://unimauro.github.io/observatorio-defensa-interior/" />
+    <meta property="og:image" content="https://unimauro.github.io/observatorio-defensa-interior/og.png" />
+    <meta property="og:image:secure_url" content="https://unimauro.github.io/observatorio-defensa-interior/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Tablero financiero del sector Defensa e Interior del Perú — SIMA, FAME, SEMAN" />
+    <meta property="og:locale" content="es_PE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Observatorio del Sector Defensa e Interior del Perú" />
+    <meta name="twitter:description" content="Tablero del sector Defensa e Interior del Perú. Datos abiertos." />
+    <meta name="twitter:image" content="https://unimauro.github.io/observatorio-defensa-interior/og.png" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://unimauro.github.io/observatorio-defensa-interior/#website",
+          "name": "Observatorio de Empresas Públicas del Perú",
+          "url": "https://unimauro.github.io/observatorio-defensa-interior/",
+          "inLanguage": "es-PE",
+          "publisher": { "@id": "https://unimauro.github.io/#person" }
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Observatorio de Empresas Públicas del Perú",
+          "url": "https://unimauro.github.io/observatorio-defensa-interior/",
+          "applicationCategory": "GovernmentApplication",
+          "operatingSystem": "Web",
+          "browserRequirements": "Requires JavaScript",
+          "isAccessibleForFree": true,
+          "inLanguage": "es-PE",
+          "image": "https://unimauro.github.io/observatorio-defensa-interior/og.png",
+          "description": "Plataforma de transparencia, monitoreo y diagnóstico de las empresas estatales del Perú (FONAFE y EPS regionales): KPIs, finanzas, contrataciones, rankings y recomendaciones.",
+          "author": { "@id": "https://unimauro.github.io/#person" }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Datos de empresas públicas del Perú (FONAFE + EPS)",
+          "description": "Finanzas, contrataciones (OCDS/OECE), transparencia, KPIs, rankings, anomalías y recomendaciones de las empresas estatales del Perú. Datos versionados; financieros ilustrativos hasta cargar fuentes oficiales.",
+          "url": "https://unimauro.github.io/observatorio-defensa-interior/",
+          "inLanguage": "es",
+          "creator": { "@id": "https://unimauro.github.io/#person" },
+          "license": "https://opendatacommons.org/licenses/odbl/",
+          "isAccessibleForFree": true,
+          "distribution": [
+            { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://unimauro.github.io/observatorio-defensa-interior/data/latest/dataset.json" }
+          ],
+          "spatialCoverage": "Perú",
+          "keywords": ["FONAFE", "empresas públicas", "empresas estatales", "Perú", "transparencia", "datos abiertos", "contrataciones", "SEACE", "OCDS", "EPS", "saneamiento", "gestión pública"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://unimauro.github.io/#person",
+          "name": "Carlos Mauro Cárdenas",
+          "url": "https://unimauro.github.io/"
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8S9WMQQ3K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V8S9WMQQ3K');
+    </script>
+
+    <script>
+      // tema sin parpadeo (por defecto oscuro, estilo terminal financiera)
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          if (t === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) { document.documentElement.classList.add('dark'); }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
