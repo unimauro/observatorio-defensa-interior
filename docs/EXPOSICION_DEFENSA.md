@@ -4,7 +4,7 @@
 **Expositor:** Carlos Cárdenas Fernández
 **Formato:** Google Meet · 15 minutos · reunión de venta/descubrimiento
 **Producto:** Tablero de inteligencia financiera del sector Defensa (SIMA, FAME, SEMAN) construido sobre el **Observatorio de Empresas Públicas** (FONAFE)
-**Dashboard demo (referencia):** https://unimauro.github.io/observatorio-fonafe/
+**Dashboard demo (live):** https://unimauro.github.io/observatorio-defensa-interior/ · página clave: `/sector` (Defensa e Interior)
 
 ---
 
