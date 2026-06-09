@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { NavLink, Outlet, Link } from 'react-router-dom'
 import {
-  LayoutDashboard, Building2, FileText, ShieldCheck, BrainCircuit, Database, SlidersHorizontal,
-  Sun, Moon, Github, Menu, X, Shield,
+  LayoutDashboard, Building2, Landmark, HeartPulse, Users,
+  Sun, Moon, Github, Menu, X,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useData } from '@/data'
@@ -11,14 +11,11 @@ import { Badge } from './ui/badge'
 import { AskBot } from './AskBot'
 
 const NAV = [
-  { to: '/', label: 'Panel', icon: LayoutDashboard, end: true },
-  { to: '/sector', label: 'Defensa e Interior', icon: Shield },
+  { to: '/', label: 'Resumen', icon: LayoutDashboard, end: true },
   { to: '/empresas', label: 'Empresas', icon: Building2 },
-  { to: '/contrataciones', label: 'Contrataciones', icon: FileText },
-  { to: '/transparencia', label: 'Transparencia', icon: ShieldCheck },
-  { to: '/decisiones', label: 'Decisiones · IA', icon: BrainCircuit },
-  { to: '/simuladores', label: 'Simuladores', icon: SlidersHorizontal },
-  { to: '/datos', label: 'Datos abiertos', icon: Database },
+  { to: '/presupuesto', label: 'Presupuesto y proyectos', icon: Landmark },
+  { to: '/pensiones', label: 'Pensiones y salud', icon: HeartPulse },
+  { to: '/remuneraciones', label: 'Remuneraciones', icon: Users },
 ]
 
 function NavItems({ onClick }: { onClick?: () => void }) {
@@ -72,9 +69,8 @@ export function Layout() {
         <div className="mt-auto space-y-2 text-[11px] text-muted-foreground">
           {meta && (
             <div className="rounded-lg border border-border p-2">
-              <div>Versión {meta.version}</div>
               <div>Datos al {meta.generated_at}</div>
-              {meta.is_illustrative && <Badge variant="warning" className="mt-1">financieros ilustrativos · contratos reales</Badge>}
+              <Badge variant="success" className="mt-1">datos reales · supuestos marcados</Badge>
             </div>
           )}
         </div>
@@ -87,8 +83,8 @@ export function Layout() {
         </button>
         <div className="lg:hidden"><Brand /></div>
         <div className="ml-auto flex items-center gap-2">
-          {data?.contracts?.isReal && <Badge variant="success" className="hidden md:inline-flex">contratos: reales</Badge>}
-          {meta?.is_illustrative && <Badge variant="warning" className="hidden sm:inline-flex">financieros: ilustrativos</Badge>}
+          <Badge variant="success" className="hidden md:inline-flex">datos reales con fuente</Badge>
+          <Badge variant="warning" className="hidden sm:inline-flex">supuestos marcados</Badge>
           <button onClick={toggleTheme} aria-label="Tema" className="rounded-md p-2 hover:bg-muted">
             {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
