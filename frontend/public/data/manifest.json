@@ -1,9 +1,34 @@
 {
   "current": {
-    "generated_at": "2026-06-09",
-    "is_illustrative": false
+    "version": "0.1.0",
+    "generated_at": "2026-06-15",
+    "is_illustrative": true
   },
   "snapshots": [
-    "2026-06-09"
+    "2026-06-08",
+    "2026-06-09",
+    "2026-06-15"
+  ],
+  "sources": [
+    {
+      "name": "FONAFE — Portal de Transparencia",
+      "url": "https://www.fonafe.gob.pe/",
+      "status": "pendiente"
+    },
+    {
+      "name": "OECE/SEACE — API OCDS (contrataciones)",
+      "url": "https://contratacionesabiertas.oece.gob.pe/api/v1",
+      "status": "pendiente"
+    },
+    {
+      "name": "MEF — Consulta Amigable",
+      "url": "https://apps5.mineco.gob.pe/transparencia/",
+      "status": "pendiente"
+    },
+    {
+      "name": "SMV — Estados financieros",
+      "url": "https://www.smv.gob.pe/",
+      "status": "pendiente"
+    }
   ]
 }
